@@ -8,7 +8,7 @@ if __name__ == '__main__':
     tf.compat.v1.disable_eager_execution()
     env = gym.make('LunarLander-v2')
     lr = 0.001
-    n_games = 500
+    n_games = 300
     agent = Agent(gamma=0.99, epsilon=1.0, lr=lr, 
                 input_dims=env.observation_space.shape,
                 n_actions=env.action_space.n, mem_size=1000000, batch_size=64,
